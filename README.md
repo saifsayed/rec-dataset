@@ -1,9 +1,11 @@
 # A New Dataset and Approach for Timestamp Supervised Action Segmentation Using Human Object Interaction
 
-Here is the code for our CVPR 2023 paper : <Add link>
- * [Project Page](<Add link>)
+Here is the code for our CVPR 2023 paper : A New Dataset and Approach for Timestamp Supervised Action Segmentation Using Human Object Interaction
+ * [Project Page](https://saifsayed.github.io/Rec.github.io/)
  * [Paper](https://openaccess.thecvf.com/content/CVPR2023W/LSHVU/papers/Sayed_A_New_Dataset_and_Approach_for_Timestamp_Supervised_Action_Segmentation_CVPRW_2023_paper.pdf)
  * [Video](https://drive.google.com/file/d/1k10xURqylCnFMexyg-GDV9OcXwIx7soz/view?usp=sharing)
+
+ Abstract: This paper focuses on leveraging Human Object Interaction (HOI) information to improve temporal action segmentation under timestamp supervision, where only one frame is annotated for each action segment. This information is obtained from an off-the-shelf pre-trained HOI detector, that requires no additional HOI-related annotations in our experimental datasets. Our approach generates pseudo labels by expanding the annotated timestamps into intervals and allows the system to exploit the spatio-temporal con- tinuity of human interaction with an object to segment the video. We also propose the (3+1)Real-time Cooking (ReC)1 dataset as a realistic collection of videos from 30 participants cooking 15 breakfast items. Our dataset has three main properties: 1) to our knowledge, the first to offer syn- chronized third and first person videos, 2) it incorporates diverse actions and tasks, and 3) it consists of high resolution frames to detect fine-grained information. In our experi- ments we benchmark state-of-the-art segmentation methods under different levels of supervision on our dataset. We also quantitatively show the advantages of using HOI information, as our framework improves its baseline segmentation method on several challenging datasets with varying viewpoints, providing improvements of up to 10.9% and 5.3% in F1 score and frame-wise accuracy respectively.
 
 
 Main Software Requirements
@@ -118,6 +120,8 @@ bbox_obj_interact_all.tar.gz: Output of HOI detector
 	* Kitchen ID: For a kitchen, there can be different camera configuration. We capture this information using a unique identifier of the kitchen in the form of (KitchenID).(Camera_configuration_id) 
 	* Frame Loss? (Y/N): Yes means there is frame loss
 	* Approximate frame loss time if available: Approximate frame loss duration.
+
+Please create an issue for any concerns.
 
 
 [1] Y. Abu Farha and J. Gall.
